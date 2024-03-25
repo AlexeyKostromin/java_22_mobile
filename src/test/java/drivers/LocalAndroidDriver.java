@@ -67,6 +67,7 @@ public class LocalAndroidDriver implements WebDriverProvider {
                 throw new AssertionError("Failed to download application", e);
             }
         }
+        var abspath = app.getAbsolutePath();
         return app.getAbsolutePath();
     }
 
